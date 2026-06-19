@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:#000;
+    color:#fff;
+}
+
+/* HEADER */
+
+header{
+    margin-top:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:3rem;
+    color:#b74b4b;
+    font-weight:800;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a{
+    font-size:1.8rem;
+    color:white;
+    margin-left:4rem;
+    font-weight:500;
+    transition:0.3s ease;
+    border-bottom:3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color:#b74b4b;
+    border-bottom:3px solid #b74b4b;
+}
+
+
+/* HOME SECTION */
+
+section{
+    min-height:100vh;
+    padding:10rem 9% 5rem;
+}
+
+.home{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:100vh;
+    gap:3rem;
+}
+
+.home-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-content h1{
+    font-size:6rem;
+    font-weight:700;
+    line-height:1.3;
+}
+
+.home-content h3{
+    font-size:4rem;
+    margin-bottom:1rem;
+    font-weight:700;
+}
+
+.home-content p{
+    font-size:1.8rem;
+    margin:2rem 0 3rem;
+    max-width:600px;
+    line-height:1.8;
+}
+
+span{
+    color:#b74b4b;
+}
+
+/* PROFILE IMAGE */
+
+
+
+.home-img img{
+    position:relative;
+    width:32vw;
+    border-radius:50%;
+    cursor:pointer;
+    box-shadow:0 0 25px #b74b4b;
+    transition:0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight:500;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons{
+    margin:2rem 0;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:4.5rem;
+    height:4.5rem;
+    margin-right:1.5rem;
+    background:transparent;
+    border:0.2rem solid #b74b4b;
+    border-radius:50%;
+    font-size:2rem;
+    color:#b74b4b;
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+    color:black;
+    background:#b74b4b;
+    transform:translateY(-5px) scale(1.1);
+    box-shadow:0 0 25px #b74b4b;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:1rem 2.8rem;
+    background:black;
+    border-radius:4rem;
+    font-size:1.6rem;
+    color:#b74b4b;
+    letter-spacing:0.2rem;
+    font-weight:600;
+    border:2px solid #b74b4b;
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#b74b4b;
+    color:black;
+    box-shadow:0 0 25px #b74b4b;
+    transform:scale(1.05);
+}
+
+/* TYPING TEXT */
+
+.typing-text{
+    font-size:3.4rem;
+    font-weight:600;
+    min-width:280px;
+}
+
+.typing-text span{
+    position:relative;
+}
+
+.typing-text {
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+.typing-text span::before {
+    content: "Engineering Student";
+    color: #b74b4b;
+    animation: words 15s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background: black;
+    border-left: 3px solid #b74b4b;
+    right: -8px;
+    animation: typing 4s steps(20) infinite;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+@keyframes typing {
+    0%,10%,100% {
+        width: calc(100% + 8px);
+    }
+
+    50%,90% {
+        width: 0;
+    }
+}
+
+@keyframes words {
+    0%,20% {
+        content: "Engineering Student";
+    }
+
+    21%,40% {
+        content: "Web Developer";
+    }
+
+    41%,60% {
+        content: "Embedded Engineer";
+    }
+
+    61%,80% {
+        content: "Filmy Buff";
+    }
+
+    81%,100% {
+        content: "Social Activist";
+    }
+}
+
+@keyframes cursor{
+    to{
+        border-left:3px solid transparent;
+    }
+}
+
+@keyframes words{
+
+    0%,20%{
+        content:"Engineering Student";
+    }
+
+    21%,40%{
+        content:"Web Developer";
+    }
+
+    41%,60%{
+        content:"Embedded Engineer";
+    }
+
+    61%,80%{
+        content:"Filmy Buff";
+    }
+
+    81%,100%{
+        content:"Social Activist";
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:995px){
+
+    html{
+        font-size:55%;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+        gap:4rem;
+    }
+
+    .home-img img{
+        width:70vw;
+        margin-top: 4rem;
+    }
+
+    nav a{
+        margin-left:2rem;
+    }
+
+    .home-content h1{
+        font-size:5rem;
+    }
+
+    .home-content h3{
+        font-size:3rem;
+    }
+
+    .home-content p{
+        font-size:1.6rem;
+    }
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        margin:1rem;
+        font-size:1.6rem;
+    }
+
+    .home-content h1{
+        font-size:4.5rem;
+    }
+
+    .typing-text{
+        font-size:2.5rem;
+    }
+}
+
+@media(max-width:480px){
+
+    .home-content h1{
+        font-size:3.8rem;
+    }
+
+    .typing-text{
+        font-size:2rem;
+    }
+
+    
