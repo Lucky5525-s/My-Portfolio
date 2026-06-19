@@ -44,7 +44,7 @@ This portfolio website was created to practice front-end web development and to 
 
 Lucky Surisetty
 
-Engineering Student | Web Developer | Embedded Systems Enthusiast
+Engineering Student | Web Developer | Embedded Systems Enthusiast  | Film Making Enthusiast..
 
 ## Live Preview
 
