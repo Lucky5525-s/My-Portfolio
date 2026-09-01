@@ -18,6 +18,7 @@ A modern and responsive personal portfolio website built using HTML and CSS. Thi
 
 - HTML5
 - CSS3
+- JavaScript
 
 ## Sections Included
 
